@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# Vladyslav Syzov — Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stunning, modern, and highly responsive single-page developer portfolio landing page built using **React**, **Vite**, **TypeScript**, and **Tailwind CSS (v4)**.
 
-Currently, two official plugins are available:
+🌐 **Live URL:** [vladyslavportfolio.netlify.app](https://vladyslavportfolio.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎨 Design & Interactions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Dark-Themed Aesthetics:** Built on a deep space (`zinc-950`) color palette with neon cyan and purple gradient accents.
+*   **Glassmorphism:** Navigation bar and timeline cards utilize frosted backdrop blur panels.
+*   **Spotlight Hover Effect:** Tech stack cards track mouse cursor coordinates dynamically to generate localized radial border highlights.
+*   **Premium Animations:**
+    *   Continuous waving hand emoji animation (`👋`) in the Hero section.
+    *   Floating/bobbing effect on the main LinkedIn CTA to prompt interaction.
+    *   Staggered entrance animations (`fadeInUp`) for page elements on load.
+*   **Clean Portals:** Contact page redesigned into clean social media cards linking to Telegram, Instagram, GitHub, and LinkedIn (with no text input forms).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack & Ecosystem
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **Core:** React 19, TypeScript, Vite 8
+*   **Styling:** Tailwind CSS v4, CSS3 Variables, Keyframe Animations
+*   **Icons:** Lucide React
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📸 Screenshots
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Hero Section & Terminal Mockup
+![Hero Section](./screenshots/hero_section.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Let's Connect Social Portals
+![Let's Connect Section](./screenshots/contact_section.png)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+*   Node.js (v18 or higher recommended)
+*   npm
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/Hizzze/MyPortfolioWeb.git
+    cd MyPortfolioWeb
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Run the local development server:
+    ```bash
+    npm run dev
+    ```
+
+4.  Build the production-ready static bundle:
+    ```bash
+    npm run build
+    ```
+    *(The output assets will be generated in the `dist/` directory)*
